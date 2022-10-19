@@ -10,11 +10,10 @@ function arrayToObject(animals) {
     let resul = {};
 
     animals.forEach(valor => {
-        let group = [];
         if (resul[valor[0]]) {
-            resul[valor[0]] += (", " + valor);
+            resul[valor[0]].push(valor)
         } else {
-            resul[valor[0]] = valor;
+            resul[valor[0]] = [valor]
         }
     });
 
