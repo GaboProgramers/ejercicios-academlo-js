@@ -21,4 +21,4 @@ function findMostCommonAge(students) {
     return arr;
   }
 
-// console.log(findMostCommonAge(repitAge));
+console.log(findMostCommonAge(repitAge));
